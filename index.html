@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savor Thai — Fine Dining in Toronto</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Savor Thai is Toronto's premier fine dining Thai restaurant, led by Iron Chef Art Prasopchok Trakulphat. Experience molecular Thai gastronomy on St. Clair West.">
+  <meta property="og:title" content="Savor Thai — Fine Dining in Toronto">
+  <meta property="og:description" content="Molecular Thai gastronomy. Tasting menus from $135. Reservations nightly from 5:30 PM.">
+  <meta property="og:type" content="restaurant">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?
+  
+  family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">✕</button>
+  <a href="#philosophy" onclick="toggleMenu()">Our Philosophy</a>
+  <a href="#menu-preview" onclick="toggleMenu()">Menu</a>
+  <a href="#chef" onclick="toggleMenu()">Chef Art</a>
+  <a href="#reservations" onclick="toggleMenu()">Reservations</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#hero" class="nav-logo">Savor <span>Thai</span></a>
+  <ul class="nav-links">
+    <li><a href="#philosophy">Philosophy</a></li>
+    <li><a href="#menu-preview">Menu</a></li>
+    <li><a href="#chef">Chef Art</a></li>
+    <li><a href="#reservations">Reservations</a></li>
+  </ul>
+  <a href="https://www.exploretock.com/savor-toronto" target="_blank" class="nav-cta">Reserve a Table</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ornament"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Toronto's Premier Thai Fine Dining</div>
+    <h1 class="hero-title">Where <em>Thai</em><br>Tradition<br>Becomes Art</h1>
+    <p class="hero-tagline">Molecular gastronomy meets centuries-old Thai culinary heritage<br>at the table of Iron Chef Prasopchok Trakulphat</p>
+    <div class="hero-actions">
+      <a href="https://www.exploretock.com/savor-toronto" target="_blank" class="btn-gold">Reserve Your Table</a>
+      <a href="#menu-preview" class="btn-ghost">Explore the Menu</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Discover
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy">
+  <div class="container">
+    <div class="philosophy-grid">
+      <div>
+        <div class="section-eyebrow fade-up">Our Culinary Vision</div>
+        <blockquote class="philosophy-quote fade-up">
+          "Thai food is about balance and emotion. At Savor, we present those emotions through refined technique and modern expression."
+        </blockquote>
+        <p class="philosophy-attr fade-up">— Chef Art Prasopchok Trakulphat</p>
+      </div>
+      <div class="pillars fade-up">
+        <div class="pillar">
+          <div class="pillar-title">Tradition Honoured</div>
+          <p class="pillar-body">Rooted in Thai culinary traditions dating to the 13th century, every dish at Savor begins with deep respect for authentic ingredients, regional flavour profiles, and the cultural stories they carry.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-title">Technique Elevated</div>
+          <p class="pillar-body">Chef Art's mastery of molecular gastronomy unlocks aromas and textures that classical Thai cooking rarely explores — sous-vide roulades, tamarind sorbets, egg foams that dissolve on the palate.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-title">Presence Demanded</div>
+          <p class="pillar-body">Dining at Savor is dinner as theatre. The open kitchen, intentional plating, and coursed tasting menu transform a meal into a story told plate by plate, spice by spice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="ornament" style="max-width: var(--max); margin: 0 auto;">
+
+<!-- MENU PREVIEW -->
+<section id="menu-preview">
+  <div class="container">
+    <div class="section-eyebrow fade-up">The Menu</div>
+    <h2 class="section-title fade-up">A Journey Through<br><em>Thailand's Flavours</em></h2>
+    <p class="section-body fade-up" style="margin-bottom: 3rem;">From the bold complexity of a fully orchestrated tasting menu to elegantly rendered à la carte classics — every dish is a conversation between tradition and innovation.</p>
+
+    <!-- Tasting Banner -->
+    <div class="tasting-banner fade-up" style="margin-bottom: 3rem;">
+      <div class="tasting-info">
+        <div class="tasting-title">Chef's Tasting Menu</div>
+        <p class="tasting-desc">An eight-course journey curated by Chef Art. Each course prepares you for the next while surprising you entirely. The defining Savor experience, available nightly from 5:30 PM.</p>
+      </div>
+      <div class="tasting-price">
+        <div class="amount">$135</div>
+        <div class="per">Per person · Nightly</div>
+        <a href="https://www.exploretock.com/savor-toronto" target="_blank" class="btn-gold" style="margin-top: 1.2rem; display: inline-block; font-size: 0.65rem;">Book Tasting Menu</a>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="menu-tabs">
+      <button class="tab-btn active" onclick="switchTab('starters')">Starters</button>
+      <button class="tab-btn" onclick="switchTab('mains')">Mains</button>
+      <button class="tab-btn" onclick="switchTab('prix-fixe')">Prix Fixe</button>
+    </div>
+
+    <!-- Starters -->
+    <div class="tab-pane active" id="tab-starters">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-name">Neua Yang <em>Grilled Beef</em></div>
+            <div class="menu-price">Starter</div>
+          </div>
+          <p class="menu-item-desc">Skewered cilantro root–marinated sirloin with spicy toasted rice and herbed relish. A study in restraint and heat in equal measure.</p>
+          <div class="menu-tags"><span class="tag">GF</span><span class="tag">NF</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-name">Peuak Tod <em>Fried Taro</em></div>
+            <div class="menu-price">Starter</div>
+          </div>
+          <p class="menu-item-desc">Fried tofu skin wrapped taro, wild mushroom, toasted peanut–tamarind sauce. Crisp, earthy, unexpectedly nuanced.</p>
+          <div class="menu-tags"><span class="tag">V</span><span class="tag">GF Avail.</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-name">Yum Polamai <em>Spicy Fruit Salad</em></div>
+            <div class="menu-price">Starter</div>
+          </div>
+          <p class="menu-item-desc">Mango, seasonal fruits, greens, toasted peanut, salmon crisp, spicy lime dressing. Sweet, sour, and electric with chilli heat.</p>
+          <div class="menu-tags"><span class="tag">V</span><span class="tag">GF</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-name">Tom Yum Goong</div>
+            <div class="menu-price">Soup</div>
+          </div>
+          <p class="menu-item-desc">Poached black tiger prawns in lemongrass–galangal–kaffir lime broth with roasted chilli paste, heirloom tomato, mushroom, and cilantro.</p>
+          <div class="menu-tags"><span class="tag">NF</span><span class="tag">GF</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mains -->
+    <div class="tab-pane" id="tab-mains">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-name">Gang Keaw Wan Gai <em>Chicken Green Curry</em></div>
+            <div class="menu-price">Main</div>
+          </div>
+          <p class="menu-item-desc">Turmeric-grilled chicken breast in fragrant green curry with eggplant. A deeply comforting classic elevated by house-ground spices.</p>
+          <div class="menu-tags"><span class="tag">NF</span><span class="tag">GF</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-name">Massaman Short Rib</div>
+            <div class="menu-price">$35</div>
+          </div>
+          <p class="menu-item-desc">Beef braised three hours in coconut milk and massaman spices. Served with Thai peanuts, heirloom carrots, jasmine rice. Curry poured tableside.</p>
+          <div class="menu-tags"><span class="tag">GF</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-name">Pad Thai Prawns</div>
+            <div class="menu-price">Market</div>
+          </div>
+          <p class="menu-item-desc">House stir-fried rice noodles, katsuobushi, dried shrimp, shallots, cured turnip. Sauce made exclusively from fish sauce, tamarind, and palm sugar.</p>
+          <div class="menu-tags"><span class="tag">GF</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-name">Vegetable Coconut Curry</div>
+            <div class="menu-price">Main</div>
+          </div>
+          <p class="menu-item-desc">Vegan curry with soy protein and grilled seasonal vegetables. Add prawns +$11, chicken or tofu +$7–8.</p>
+          <div class="menu-tags"><span class="tag">V</span><span class="tag">NF</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Prix Fixe -->
+    <div class="tab-pane" id="tab-prix-fixe">
+      <div style="padding: 2rem 0;">
+        <div class="tasting-banner" style="margin-bottom: 2rem;">
+          <div class="tasting-info">
+            <div class="tasting-title">Taste of Thailand — Prix Fixe</div>
+            <p class="tasting-desc">A three-course curated journey through vibrant Thai flavours. Choose one from each course — starter, main, and dessert — for a complete Savor experience at an exceptional value.</p>
+          </div>
+          <div class="tasting-price">
+            <div class="amount">$65</div>
+            <div class="per">Per person · 3 courses</div>
+          </div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header"><div class="menu-item-name">First Course</div></div>
+            <p class="menu-item-desc">Choose from Neua Yang (grilled beef skewer) or Peuak Tod (fried taro, tofu skin, mushroom).</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header"><div class="menu-item-name">Second Course</div></div>
+            <p class="menu-item-desc">Choose from Chicken Green Curry or Vegetable Coconut Curry — both with jasmine rice.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header"><div class="menu-item-name">Dessert Course</div></div>
+            <p class="menu-item-desc">Thai Tea Tres Leches — caramelised pecan, milk-whipped cream, Thai tea–white chocolate ganache.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="https://www.savortoronto.ca/menu" target="_blank" class="btn-ghost">View Full Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="experience" style="padding: 0;">
+  <div class="container" style="padding: 0; max-width: 100%;">
+    <div class="stats-grid">
+      <div class="stat-box fade-up">
+        <div class="stat-num">2023</div>
+        <div class="stat-label">Founded in Toronto</div>
+      </div>
+      <div class="stat-box fade-up">
+        <div class="stat-num">8+</div>
+        <div class="stat-label">Tasting Courses</div>
+      </div>
+      <div class="stat-box fade-up">
+        <div class="stat-num">13th C.</div>
+        <div class="stat-label">Thai Culinary Roots</div>
+      </div>
+      <div class="stat-box fade-up">
+        <div class="stat-num">★</div>
+        <div class="stat-label">Iron Chef Certified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHEF -->
+<section id="chef">
+  <div class="container">
+    <div class="chef-grid">
+      <div class="chef-portrait fade-up">
+        <div class="chef-badge">
+          <div class="chef-badge-title">Executive Chef & Founder</div>
+          <div class="chef-badge-name">Prasopchok "Art" Trakulphat</div>
+        </div>
+      </div>
+      <div>
+        <div class="section-eyebrow fade-up">The Artist Behind the Plate</div>
+        <h2 class="section-title fade-up">Iron Chef.<br><em>Thai Culinary</em><br>Visionary.</h2>
+        <p class="section-body fade-up" style="margin-bottom: 2rem;">Chef Art brings to Toronto what Thailand's most storied kitchens produced over decades: a profound understanding of balance, spice, and the emotional resonance of food. His approach — described as Asian-twist molecular gastronomy — is not technique for technique's sake, but technique in service of flavour, story, and memory.</p>
+        <p class="section-body fade-up" style="margin-bottom: 3rem;">At Savor, he has created one of Toronto's first Thai-focused tasting menus, a format that allows the full arc of Thai gastronomy to be told — from ancient regional recipes to his avant-garde reimaginings — in a single, unforgettable evening.</p>
+        <div class="chef-credentials fade-up">
+          <div class="credential">
+            <div class="cred-year">Iron<br>Chef</div>
+            <div class="cred-text"><strong>Certified Iron Chef, Thailand</strong> — competed at the highest level of Thai culinary competition before bringing his discipline and creativity to Canada.</div>
+          </div>
+          <div class="credential">
+            <div class="cred-year">2023</div>
+            <div class="cred-text"><strong>Savor Thai opens on St. Clair West</strong> — attended by H.E. Kallayana Vipattipumiprates, Ambassador of Thailand to Canada, and the Thai Trade Office and Tourism Authority Toronto offices.</div>
+          </div>
+          <div class="credential">
+            <div class="cred-year">Now</div>
+            <div class="cred-text"><strong>Recognised among the best Thai restaurants in Toronto</strong> by Toronto Life and Streets of Toronto — building Savor's reputation as a destination for food enthusiasts across Canada.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATIONS -->
+<section id="reservations">
+  <div class="container">
+    <div class="section-eyebrow fade-up">Reserve Your Experience</div>
+    <h2 class="section-title fade-up">Join Us for <em>Dinner</em></h2>
+    <div class="res-grid" style="margin-top: 3rem;">
+      <div>
+        <p class="section-body">We welcome parties of 1 to 12 guests. For large groups or private dining inquiries, please reach out directly. Reservations are strongly recommended.</p>
+        <ul class="hours-list" style="margin-top: 2rem;">
+          <li><span class="day">Sunday – Monday</span><span class="time">Closed</span></li>
+          <li><span class="day">Tuesday – Thursday</span><span class="time">5:30 PM – 10:00 PM</span></li>
+          <li><span class="day">Friday – Saturday</span><span class="time">5:30 PM – 11:00 PM</span></li>
+        </ul>
+        <div class="info-blocks" style="margin-top: 2.5rem;">
+          <div class="info-block">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0z"/></svg>
+            </div>
+            <div class="info-text">
+              <div class="label">Address</div>
+              <div class="value">1226 Saint Clair Avenue West, Toronto, ON M6E 1B4</div>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+            </div>
+            <div class="info-text">
+              <div class="label">Email</div>
+              <div class="value">savorthaito@gmail.com</div>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+            </div>
+            <div class="info-text">
+              <div class="label">Parking</div>
+              <div class="value">Street parking available on St. Clair Avenue West</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="res-form-side">
+        <p style="font-family: var(--serif); font-size: 1.1rem; font-style: italic; color: rgba(248,243,236,0.6); margin-bottom: 1.5rem;">Reserve securely through Tock, or send us a message below for private dining enquiries.</p>
+        <a href="https://www.exploretock.com/savor-toronto" target="_blank" class="btn-gold" style="display: block; text-align: center; margin-bottom: 1.5rem; padding: 1.2rem;">Reserve on Tock →</a>
+        <div style="position: relative; margin: 2rem 0;">
+          <hr class="ornament" style="margin: 0;">
+          <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--deep); padding: 0 1rem; font-size: 0.7rem; letter-spacing: 0.2em; color: rgba(248,243,236,0.35); text-transform: uppercase;">Or enquire directly</span>
+        </div>
+        <div class="form-row">
+          <div class="field-group">
+            <label class="field-label">First Name</label>
+            <input type="text" class="field-input" placeholder="Your name">
+          </div>
+          <div class="field-group">
+            <label class="field-label">Party Size</label>
+            <select class="field-input">
+              <option>2 guests</option>
+              <option>3 guests</option>
+              <option>4 guests</option>
+              <option>5–8 guests</option>
+              <option>9–12 guests</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label">Email</label>
+          <input type="email" class="field-input" placeholder="your@email.com">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Message or Special Request</label>
+          <textarea class="field-input" rows="3" placeholder="Dietary requirements, occasion, private dining..." style="resize: vertical;"></textarea>
+        </div>
+        <button class="btn-gold" style="width: 100%; margin-top: 0.5rem; padding: 1.1rem; font-size: 0.72rem;">Send Enquiry</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="brand-name">Savor Thai</div>
+      <p>Toronto's fine dining destination for molecular Thai gastronomy. Led by Iron Chef Prasopchok Trakulphat on St. Clair West in Corso Italia.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="#philosophy">Our Philosophy</a></li>
+        <li><a href="#menu-preview">The Menu</a></li>
+        <li><a href="#chef">Chef Art</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Experience</h4>
+      <ul>
+        <li><a href="https://www.savortoronto.ca/menu" target="_blank">Tasting Menu</a></li>
+        <li><a href="https://www.savortoronto.ca/menu?menu=menu" target="_blank">À La Carte</a></li>
+        <li><a href="https://www.exploretock.com/savor-toronto" target="_blank">Book on Tock</a></li>
+        <li><a href="https://www.savortoronto.ca" target="_blank">Official Website</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <ul>
+        <li><a href="#">1226 St. Clair Ave West</a></li>
+        <li><a href="#">Toronto, ON M6E 1B4</a></li>
+        <li><a href="mailto:savorthaito@gmail.com">savorthaito@gmail.com</a></li>
+        <li><a href="#">Tue–Sat from 5:30 PM</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Savor Thai. 1226 Saint Clair Avenue West, Toronto. Built by Noor Faisel</p>
+    <p style="font-style: italic; font-family: var(--serif); font-size: 0.85rem; color: rgba(248,243,236,0.25);">Thai Fine Dining · Toronto</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
